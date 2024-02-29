@@ -1,0 +1,91 @@
+<app-header></app-header>
+<section class="bg-primary-100 home-div pb-20">
+  <div class="pt-40 flex flex-col items-center">
+    <h2
+      class="text-center text-4xl font-extrabold text-primary-900 sm:text-5xl sm:tracking-tight lg:text-6xl pb-10"
+    >
+      Contact Me
+    </h2>
+    <p
+      class="max-w-xl lg:text-xl text-primary-700 tracking-wider text-center mb-10 p-2 lg:p0"
+    >
+      Do you need a
+      <span class="text-purple-600 font-semibold">Web Application</span> or a
+      <span class="text-purple-600 font-semibold">Simple Website</span>? Or any
+      other kind of information about my work ? Contact me !
+    </p>
+  </div>
+  <div class="p-5 lg:p-0">
+    <div
+      class="py-6 lg:py-16 px-4 mx-auto max-w-screen-md bg-white rounded-3xl shadow-lg lg:shadow-2xl"
+    >
+      <form onsubmit="return false;" class="space-y-8 p-5">
+        <div>
+          <label for="email" class="block mb-2 font-semibold text-primary-600"
+            >Your email</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="shadow-md bg-gray-50 rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+            placeholder="name@flowbite.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="subject" class="block mb-2 font-semibold text-primary-600"
+            >Subject</label
+          >
+          <input
+            type="text"
+            id="subject"
+            class="shadow-md p-3 w-full bg-gray-50 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+            placeholder="Let us know how we can help you"
+            required
+          />
+        </div>
+        <div class="sm:col-span-2">
+          <label for="message" class="block mb-2 font-semibold text-primary-600"
+            >Your message</label
+          >
+          <textarea
+            id="message"
+            rows="6"
+            class="shadow-md p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            placeholder="Leave a comment..."
+            required
+          >
+          </textarea>
+        </div>
+        @if(textError !== ''){
+        <div>
+          <p class="text-secondary-400 text-lg">{{ textError }}</p>
+        </div>
+        }
+        <button
+          onsubmit="sendEmail()"
+          type="submit"
+          class="py-3 px-5 text-center text-white font-medium rounded-lg bg-purple-800 tracking-widest flex items-center"
+        >
+          Send message
+          <div class="svg-dimension ms-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+              />
+            </svg>
+          </div>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

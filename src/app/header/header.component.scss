@@ -1,0 +1,15 @@
+header {
+  height: 100px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+img {
+  width: 80px;
+  height: 70px;
+  @media (min-width: 1024px) {
+    width: 90px;
+    height: 80px;
+  }
+}

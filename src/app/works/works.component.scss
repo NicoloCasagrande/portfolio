@@ -1,0 +1,21 @@
+.ms-max-h-card {
+  height: 400px;
+}
+
+.ms-docs-button {
+  max-width: 130px;
+}
+
+button {
+  height: 50px;
+}
+
+.ms-max-width {
+  @media (min-width: 1225px) {
+    max-width: 900px;
+  }
+}
+
+.ms-max-width-2 {
+  max-width: 200px;
+}

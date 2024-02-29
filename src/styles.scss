@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.home-div {
+  min-height: 100vh;
+}
+
+.svg-dimension {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.home-div {
+  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+}
