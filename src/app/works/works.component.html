@@ -10,7 +10,11 @@
   >
     If you want to see the project's template I created a demo Version of the
     Application, and is possible to see also
-    <a href="https://github.com/NicoloCasagrande"><span class="text-purple-800 font-semibold">the Github documentation</span></a>.
+    <a href="https://github.com/NicoloCasagrande"
+      ><span class="text-purple-800 font-semibold"
+        >the Github documentation</span
+      ></a
+    >.
   </p>
   <div
     class="grid lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-12 max-w-7xl mx-auto pt-16 mb-20"
@@ -20,11 +24,11 @@
       class="flex flex-col bg-white p-6 lg:p-8 xl:p-12 rounded-lg md:rounded-xl lg:rounded-2xl xl:rounded-3xl shadow-lg lg:shadow-2xl"
     >
       <div class="flex flex-col items-start justify-between h-full">
-        <div class="flex">
+        <div class="flex technologies-div">
           @for (tool of work.tools; track tool) {
-            <div class="rounded-xl border-2 border-black p-2 font-semibold me-2">
-              {{ tool }}
-            </div>
+          <div class="rounded-xl border-2 border-black p-2 font-semibold">
+            {{ tool }}
+          </div>
           }
         </div>
 
